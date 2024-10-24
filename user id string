@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char input[100];         
+    char userID[110];         
+    const char *prefix = "User _"; 
+
+    
+    printf("Enter a string of letters and numbers: ");
+    scanf("%s", input); // Read user input
+
+
+    strcpy(userID, prefix);
+
+    
+    strcat(userID, input);
+
+    
+    printf("Generated User ID: %s\n", userID);
+
+    return 0;
+}
